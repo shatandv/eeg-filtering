@@ -1,0 +1,1876 @@
+[
+	{
+		"ts": 2233.3333333333335,
+		"actions": {
+			"eyeLookUpRight": 0.22778183221817017,
+			"eyeSquintLeft": 0.4225715398788452,
+			"eyeSquintRight": 0.5308035016059875,
+			"mouthPressLeft": 0.2763499915599823,
+			"mouthSmileLeft": 0.5999032855033875,
+			"mouthSmileRight": 0.5839893817901611
+		}
+	},
+	{
+		"ts": 5666.666666666667,
+		"actions": {
+			"eyeLookUpRight": 0.20902995765209198,
+			"eyeSquintLeft": 0.30821534991264343,
+			"eyeSquintRight": 0.3318953216075897,
+			"mouthPressLeft": 0.223577618598938
+		}
+	},
+	{
+		"ts": 9600.0,
+		"actions": {
+			"eyeLookOutLeft": 0.2041645646095276,
+			"eyeSquintLeft": 0.5363361239433289,
+			"eyeSquintRight": 0.5368058681488037,
+			"mouthPressLeft": 0.5059576034545898,
+			"mouthPressRight": 0.2056318074464798,
+			"mouthShrugLower": 0.6061958074569702,
+			"mouthSmileLeft": 0.41392090916633606,
+			"mouthSmileRight": 0.3603459596633911
+		}
+	},
+	{
+		"ts": 13600.0,
+		"actions": {
+			"eyeSquintLeft": 0.3081578016281128,
+			"mouthPressLeft": 0.5331684350967407
+		}
+	},
+	{
+		"ts": 16133.333333333332,
+		"actions": {
+			"browInnerUp": 0.20873819291591644,
+			"browOuterUpLeft": 0.288726806640625,
+			"browOuterUpRight": 0.5696721076965332,
+			"eyeBlinkLeft": 0.562565267086029,
+			"eyeBlinkRight": 0.25356775522232056,
+			"eyeLookDownLeft": 0.5954757928848267,
+			"eyeLookDownRight": 0.6058377027511597,
+			"eyeLookOutLeft": 0.20527805387973785,
+			"eyeSquintLeft": 0.467117577791214,
+			"eyeSquintRight": 0.376532644033432,
+			"mouthPressLeft": 0.522025465965271
+		}
+	},
+	{
+		"ts": 19033.333333333332,
+		"actions": {
+			"browOuterUpLeft": 0.48760852217674255,
+			"browOuterUpRight": 0.5957999229431152,
+			"eyeLookUpLeft": 0.4458894729614258,
+			"eyeLookUpRight": 0.49196919798851013,
+			"eyeSquintLeft": 0.46990472078323364,
+			"eyeSquintRight": 0.3269456923007965
+		}
+	},
+	{
+		"ts": 22433.333333333332,
+		"actions": {
+			"browOuterUpLeft": 0.24298803508281708,
+			"browOuterUpRight": 0.3719707131385803,
+			"eyeBlinkLeft": 0.2756076455116272,
+			"eyeLookDownLeft": 0.33970022201538086,
+			"eyeLookDownRight": 0.34841588139533997,
+			"eyeSquintLeft": 0.5665838718414307,
+			"eyeSquintRight": 0.5413238406181335
+		}
+	},
+	{
+		"ts": 26033.333333333332,
+		"actions": {
+			"browOuterUpLeft": 0.2968827486038208,
+			"eyeLookUpLeft": 0.5681061744689941,
+			"eyeLookUpRight": 0.5657328367233276,
+			"eyeSquintLeft": 0.43062230944633484,
+			"jawRight": 0.2799193859100342,
+			"mouthPucker": 0.9810425639152527,
+			"mouthRight": 0.4201355576515198
+		}
+	},
+	{
+		"ts": 29366.666666666668,
+		"actions": {
+			"browInnerUp": 0.27825191617012024,
+			"browOuterUpLeft": 0.4189644753932953,
+			"browOuterUpRight": 0.608196496963501,
+			"eyeBlinkRight": 0.2507604956626892,
+			"eyeLookDownLeft": 0.4593602418899536,
+			"eyeLookDownRight": 0.4590216279029846,
+			"eyeLookInRight": 0.31402191519737244,
+			"eyeLookOutLeft": 0.2953004539012909,
+			"eyeSquintLeft": 0.38747552037239075,
+			"eyeSquintRight": 0.430901437997818
+		}
+	},
+	{
+		"ts": 32266.666666666664,
+		"actions": {
+			"browOuterUpLeft": 0.37905919551849365,
+			"browOuterUpRight": 0.3966588079929352,
+			"eyeLookInLeft": 0.5238563418388367,
+			"eyeLookOutRight": 0.508804440498352,
+			"eyeSquintLeft": 0.4922555387020111,
+			"mouthShrugLower": 0.29011720418930054
+		}
+	},
+	{
+		"ts": 34966.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.2190779149532318,
+			"browOuterUpRight": 0.31037411093711853,
+			"eyeLookUpLeft": 0.4232404828071594,
+			"eyeLookUpRight": 0.45888930559158325,
+			"eyeSquintLeft": 0.3938377797603607,
+			"eyeSquintRight": 0.27355265617370605
+		}
+	},
+	{
+		"ts": 37966.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.318031907081604,
+			"browOuterUpRight": 0.4090961515903473,
+			"eyeBlinkLeft": 0.397397518157959,
+			"eyeBlinkRight": 0.4216313064098358,
+			"eyeLookDownLeft": 0.4050480127334595,
+			"eyeLookDownRight": 0.4104614555835724,
+			"eyeLookInRight": 0.43877464532852173,
+			"eyeLookOutLeft": 0.430978000164032,
+			"eyeSquintLeft": 0.7436658143997192,
+			"eyeSquintRight": 0.623384416103363
+		}
+	},
+	{
+		"ts": 40633.333333333336,
+		"actions": {
+			"browInnerUp": 0.40709465742111206,
+			"browOuterUpLeft": 0.2278968095779419,
+			"browOuterUpRight": 0.23064322769641876,
+			"eyeSquintLeft": 0.2560971677303314,
+			"eyeSquintRight": 0.4096013307571411,
+			"jawRight": 0.21964778006076813,
+			"mouthFrownLeft": 0.3155881464481354,
+			"mouthFrownRight": 0.22701959311962128
+		}
+	},
+	{
+		"ts": 43566.666666666664,
+		"actions": {
+			"browOuterUpLeft": 0.3779233396053314,
+			"eyeLookInRight": 0.9111545085906982,
+			"eyeLookOutLeft": 0.9051511287689209,
+			"eyeLookUpLeft": 0.537975013256073,
+			"eyeLookUpRight": 0.5494848489761353,
+			"eyeSquintLeft": 0.23732556402683258,
+			"eyeSquintRight": 0.26463454961776733
+		}
+	},
+	{
+		"ts": 46466.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.4601121246814728,
+			"browOuterUpRight": 0.3823164105415344,
+			"eyeBlinkLeft": 0.40184634923934937,
+			"eyeBlinkRight": 0.4674628973007202,
+			"eyeLookDownLeft": 0.6792360544204712,
+			"eyeLookDownRight": 0.6832128763198853,
+			"eyeLookInRight": 0.2723396420478821,
+			"eyeLookOutLeft": 0.2821047604084015,
+			"eyeSquintLeft": 0.5565459132194519,
+			"eyeSquintRight": 0.45865631103515625
+		}
+	},
+	{
+		"ts": 49900.0,
+		"actions": {
+			"browOuterUpLeft": 0.46343234181404114,
+			"browOuterUpRight": 0.431856244802475,
+			"eyeBlinkLeft": 0.3362351357936859,
+			"eyeBlinkRight": 0.38230180740356445,
+			"eyeLookDownLeft": 0.6096808910369873,
+			"eyeLookDownRight": 0.612411618232727,
+			"eyeLookInRight": 0.42365801334381104,
+			"eyeLookOutLeft": 0.42903465032577515,
+			"eyeSquintLeft": 0.599635660648346,
+			"eyeSquintRight": 0.49582284688949585,
+			"jawOpen": 0.21581709384918213
+		}
+	},
+	{
+		"ts": 52300.0,
+		"actions": {
+			"browOuterUpLeft": 0.47304007411003113,
+			"browOuterUpRight": 0.5823923349380493,
+			"eyeBlinkLeft": 0.35363343358039856,
+			"eyeBlinkRight": 0.37773415446281433,
+			"eyeLookDownLeft": 0.5871787667274475,
+			"eyeLookDownRight": 0.611876368522644,
+			"eyeLookInRight": 0.3788449764251709,
+			"eyeLookOutLeft": 0.38024696707725525,
+			"eyeSquintLeft": 0.4050397574901581,
+			"eyeSquintRight": 0.47144681215286255
+		}
+	},
+	{
+		"ts": 55733.333333333336,
+		"actions": {
+			"browOuterUpLeft": 0.38994869589805603,
+			"browOuterUpRight": 0.4947492480278015,
+			"eyeBlinkLeft": 0.2900567352771759,
+			"eyeBlinkRight": 0.3384067118167877,
+			"eyeLookDownLeft": 0.47324487566947937,
+			"eyeLookDownRight": 0.49492859840393066,
+			"eyeLookInRight": 0.40582624077796936,
+			"eyeLookOutLeft": 0.4043247401714325,
+			"eyeSquintLeft": 0.509941577911377,
+			"eyeSquintRight": 0.562458872795105
+		}
+	},
+	{
+		"ts": 58400.0,
+		"actions": {
+			"eyeLookInLeft": 0.686508059501648,
+			"eyeLookOutRight": 0.6951296329498291,
+			"eyeLookUpLeft": 0.24877619743347168,
+			"eyeLookUpRight": 0.2577112317085266,
+			"eyeSquintLeft": 0.23278728127479553
+		}
+	},
+	{
+		"ts": 61833.333333333336,
+		"actions": {
+			"browInnerUp": 0.21451902389526367,
+			"browOuterUpLeft": 0.49716880917549133,
+			"browOuterUpRight": 0.6633946895599365,
+			"eyeBlinkLeft": 0.2904539406299591,
+			"eyeBlinkRight": 0.2720792293548584,
+			"eyeLookDownLeft": 0.5390578508377075,
+			"eyeLookDownRight": 0.5451096296310425,
+			"eyeSquintLeft": 0.44111645221710205,
+			"eyeSquintRight": 0.4082178771495819
+		}
+	},
+	{
+		"ts": 64533.33333333333,
+		"actions": {
+			"browOuterUpRight": 0.4080827534198761,
+			"eyeLookUpLeft": 0.4507295787334442,
+			"eyeLookUpRight": 0.5122767686843872,
+			"eyeSquintLeft": 0.24363477528095245,
+			"eyeSquintRight": 0.22525160014629364
+		}
+	},
+	{
+		"ts": 68500.0,
+		"actions": {
+			"browOuterUpRight": 0.2420259416103363,
+			"eyeBlinkLeft": 0.23408502340316772,
+			"eyeLookDownLeft": 0.6492473483085632,
+			"eyeLookDownRight": 0.6407749056816101,
+			"eyeSquintRight": 0.21801187098026276
+		}
+	},
+	{
+		"ts": 72333.33333333333,
+		"actions": {
+			"browInnerUp": 0.33111220598220825,
+			"eyeLookDownLeft": 0.20018982887268066,
+			"eyeLookInRight": 0.4165191054344177,
+			"eyeLookOutLeft": 0.39689910411834717,
+			"eyeSquintLeft": 0.20474502444267273,
+			"eyeSquintRight": 0.5450522899627686,
+			"mouthFrownLeft": 0.40601885318756104,
+			"mouthFrownRight": 0.3196888566017151,
+			"mouthRight": 0.2860007882118225,
+			"mouthShrugLower": 0.3383065462112427
+		}
+	},
+	{
+		"ts": 75966.66666666667,
+		"actions": {
+			"eyeSquintLeft": 0.2056892365217209,
+			"eyeSquintRight": 0.4511910676956177,
+			"mouthPressLeft": 0.24098151922225952
+		}
+	},
+	{
+		"ts": 78566.66666666666,
+		"actions": {
+			"eyeSquintLeft": 0.23759496212005615,
+			"eyeSquintRight": 0.3713568150997162
+		}
+	},
+	{
+		"ts": 82633.33333333333,
+		"actions": {
+			"browOuterUpLeft": 0.6273677349090576,
+			"eyeBlinkRight": 0.24790608882904053,
+			"eyeLookDownLeft": 0.518265962600708,
+			"eyeLookDownRight": 0.5225749015808105,
+			"eyeSquintLeft": 0.6465194821357727,
+			"eyeSquintRight": 0.5364014506340027,
+			"mouthShrugLower": 0.43527019023895264,
+			"mouthSmileLeft": 0.43517208099365234,
+			"mouthSmileRight": 0.35773223638534546
+		}
+	},
+	{
+		"ts": 86666.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.26183021068573,
+			"browOuterUpRight": 0.4128531217575073,
+			"eyeLookInRight": 0.7085926532745361,
+			"eyeLookOutLeft": 0.6820783615112305,
+			"eyeLookUpRight": 0.2062000036239624,
+			"eyeSquintLeft": 0.32093432545661926,
+			"eyeSquintRight": 0.5440068244934082
+		}
+	},
+	{
+		"ts": 89300.0,
+		"actions": {
+			"browOuterUpRight": 0.21499690413475037,
+			"eyeBlinkLeft": 0.20936042070388794,
+			"eyeLookInLeft": 0.35194894671440125,
+			"eyeLookOutRight": 0.38523635268211365,
+			"eyeSquintLeft": 0.7754655480384827,
+			"eyeSquintRight": 0.5239084959030151,
+			"mouthSmileLeft": 0.6528859734535217,
+			"mouthSmileRight": 0.6569422483444214
+		}
+	},
+	{
+		"ts": 93300.0,
+		"actions": {
+			"browOuterUpLeft": 0.4867341220378876,
+			"eyeBlinkLeft": 0.22254134714603424,
+			"eyeBlinkRight": 0.31022828817367554,
+			"eyeLookDownLeft": 0.34326910972595215,
+			"eyeLookDownRight": 0.36261507868766785,
+			"eyeLookInLeft": 0.40635600686073303,
+			"eyeLookOutRight": 0.40072154998779297,
+			"eyeSquintLeft": 0.4027528464794159,
+			"eyeSquintRight": 0.2774956524372101,
+			"mouthFrownLeft": 0.26254984736442566,
+			"mouthFrownRight": 0.26818767189979553,
+			"mouthShrugLower": 0.6940704584121704,
+			"mouthShrugUpper": 0.20029139518737793
+		}
+	},
+	{
+		"ts": 96033.33333333333,
+		"actions": {
+			"browOuterUpLeft": 0.23012103140354156,
+			"browOuterUpRight": 0.2912662923336029,
+			"eyeLookDownLeft": 0.30596765875816345,
+			"eyeLookDownRight": 0.3064253628253937,
+			"eyeLookInLeft": 0.227254718542099,
+			"eyeLookOutRight": 0.2439490556716919,
+			"eyeSquintLeft": 0.27287399768829346,
+			"mouthShrugLower": 0.22760459780693054
+		}
+	},
+	{
+		"ts": 99833.33333333333,
+		"actions": {
+			"browOuterUpLeft": 0.3139418363571167,
+			"eyeLookDownLeft": 0.38252007961273193,
+			"eyeLookDownRight": 0.3947412967681885,
+			"eyeLookInLeft": 0.23650380969047546,
+			"eyeLookOutRight": 0.264262318611145,
+			"eyeSquintLeft": 0.35336947441101074,
+			"eyeSquintRight": 0.2254122495651245,
+			"mouthPressLeft": 0.6129389405250549,
+			"mouthShrugLower": 0.3480033278465271
+		}
+	},
+	{
+		"ts": 102666.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.31794473528862,
+			"browOuterUpRight": 0.3630819320678711,
+			"eyeLookInLeft": 0.3077002465724945,
+			"eyeLookOutRight": 0.34031903743743896,
+			"eyeLookUpLeft": 0.36463990807533264,
+			"eyeLookUpRight": 0.3943539261817932,
+			"eyeSquintLeft": 0.6979093551635742,
+			"eyeSquintRight": 0.5468759536743164,
+			"mouthPressLeft": 0.5351758599281311,
+			"mouthRollLower": 0.2247202843427658
+		}
+	},
+	{
+		"ts": 105333.33333333333,
+		"actions": {
+			"browOuterUpLeft": 0.4630140960216522,
+			"browOuterUpRight": 0.6266241073608398,
+			"eyeBlinkLeft": 0.5207828283309937,
+			"eyeBlinkRight": 0.5019233226776123,
+			"eyeLookDownLeft": 0.6996728181838989,
+			"eyeLookDownRight": 0.7163718342781067,
+			"eyeLookInRight": 0.27333754301071167,
+			"eyeLookOutLeft": 0.28604426980018616,
+			"eyeSquintLeft": 0.7101141214370728,
+			"eyeSquintRight": 0.4274950921535492,
+			"mouthPressLeft": 0.25956401228904724
+		}
+	},
+	{
+		"ts": 108366.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.483478844165802,
+			"browOuterUpRight": 0.5718439221382141,
+			"eyeBlinkLeft": 0.5220593214035034,
+			"eyeBlinkRight": 0.4473409950733185,
+			"eyeLookDownLeft": 0.6274996399879456,
+			"eyeLookDownRight": 0.6546505689620972,
+			"eyeSquintLeft": 0.6325529217720032,
+			"eyeSquintRight": 0.5591043829917908
+		}
+	},
+	{
+		"ts": 110933.33333333334,
+		"actions": {
+			"browOuterUpLeft": 0.4326857924461365,
+			"browOuterUpRight": 0.5122454762458801,
+			"eyeBlinkLeft": 0.28656744956970215,
+			"eyeBlinkRight": 0.3588036894798279,
+			"eyeLookDownLeft": 0.43090876936912537,
+			"eyeLookDownRight": 0.4310782849788666,
+			"eyeSquintLeft": 0.6550489664077759,
+			"eyeSquintRight": 0.5512549877166748,
+			"mouthPressLeft": 0.22130714356899261
+		}
+	},
+	{
+		"ts": 114200.0,
+		"actions": {
+			"browOuterUpLeft": 0.5759551525115967,
+			"browOuterUpRight": 0.5782190561294556,
+			"eyeBlinkLeft": 0.20809660851955414,
+			"eyeLookDownLeft": 0.23819123208522797,
+			"eyeLookDownRight": 0.2539960741996765,
+			"eyeSquintLeft": 0.7130482196807861,
+			"eyeSquintRight": 0.49376121163368225
+		}
+	},
+	{
+		"ts": 116633.33333333333,
+		"actions": {
+			"browOuterUpLeft": 0.5566297173500061,
+			"browOuterUpRight": 0.5262615084648132,
+			"eyeBlinkLeft": 0.29546329379081726,
+			"eyeBlinkRight": 0.29403790831565857,
+			"eyeLookDownLeft": 0.43191033601760864,
+			"eyeLookDownRight": 0.438252329826355,
+			"eyeLookInRight": 0.23470786213874817,
+			"eyeLookOutLeft": 0.24883536994457245,
+			"eyeSquintLeft": 0.6920984983444214,
+			"eyeSquintRight": 0.5472404360771179
+		}
+	},
+	{
+		"ts": 119966.66666666667,
+		"actions": {
+			"browOuterUpLeft": 0.6696370840072632,
+			"browOuterUpRight": 0.6378470659255981,
+			"eyeBlinkLeft": 0.2242000550031662,
+			"eyeBlinkRight": 0.24099689722061157,
+			"eyeLookDownLeft": 0.4639350175857544,
+			"eyeLookDownRight": 0.46465665102005005,
+			"eyeLookInRight": 0.37699025869369507,
+			"eyeLookOutLeft": 0.366909384727478,
+			"eyeSquintLeft": 0.6443527340888977,
+			"eyeSquintRight": 0.5053833723068237
+		}
+	},
+	{
+		"ts": 122633.33333333333,
+		"actions": {
+			"eyeBlinkLeft": 0.39510583877563477,
+			"eyeBlinkRight": 0.35947349667549133,
+			"eyeLookDownLeft": 0.30733492970466614,
+			"eyeLookDownRight": 0.3144358694553375,
+			"eyeLookInRight": 0.2779933512210846,
+			"eyeLookOutLeft": 0.2902800738811493,
+			"eyeSquintLeft": 0.5853431224822998,
+			"eyeSquintRight": 0.6510195732116699
+		}
+	},
+	{
+		"ts": 125666.66666666667,
+		"actions": {
+			"browInnerUp": 0.20217834413051605,
+			"browOuterUpLeft": 0.6179165840148926,
+			"browOuterUpRight": 0.6898273229598999,
+			"eyeBlinkLeft": 0.32147786021232605,
+			"eyeBlinkRight": 0.3321632146835327,
+			"eyeLookDownLeft": 0.6241201162338257,
+			"eyeLookDownRight": 0.6294680833816528,
+			"eyeLookInRight": 0.29327157139778137,
+			"eyeLookOutLeft": 0.2902248799800873,
+			"eyeSquintLeft": 0.5820281505584717,
+			"eyeSquintRight": 0.433861643075943
+		}
+	},
+	{
+		"ts": 128300.00000000001,
+		"actions": {
+			"browOuterUpLeft": 0.5045785903930664,
+			"browOuterUpRight": 0.5699089765548706,
+			"eyeBlinkLeft": 0.37143969535827637,
+			"eyeBlinkRight": 0.4652661383152008,
+			"eyeLookDownLeft": 0.6543278098106384,
+			"eyeLookDownRight": 0.6462777256965637,
+			"eyeLookInRight": 0.4046211242675781,
+			"eyeLookOutLeft": 0.39796319603919983,
+			"eyeSquintLeft": 0.5535932779312134,
+			"eyeSquintRight": 0.5178372263908386
+		}
+	},
+	{
+		"ts": 132100.0,
+		"actions": {
+			"eyeLookUpLeft": 0.5493482351303101,
+			"eyeLookUpRight": 0.5897987484931946,
+			"eyeSquintRight": 0.23782676458358765,
+			"mouthRight": 0.3240461051464081
+		}
+	},
+	{
+		"ts": 134733.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.21322903037071228,
+			"eyeLookUpLeft": 0.6909201145172119,
+			"eyeLookUpRight": 0.7270277738571167,
+			"mouthPucker": 0.4938679337501526
+		}
+	},
+	{
+		"ts": 138000.0,
+		"actions": {
+			"eyeLookInLeft": 0.2532760798931122,
+			"eyeLookOutRight": 0.30149245262145996,
+			"eyeLookUpRight": 0.20743519067764282,
+			"eyeSquintLeft": 0.21748341619968414,
+			"eyeSquintRight": 0.2074504792690277,
+			"mouthPressLeft": 0.508884608745575
+		}
+	},
+	{
+		"ts": 140733.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.22317682206630707,
+			"browOuterUpRight": 0.5998685359954834,
+			"eyeBlinkLeft": 0.5053325891494751,
+			"eyeLookDownLeft": 0.5482174158096313,
+			"eyeLookDownRight": 0.4958725869655609,
+			"eyeLookInLeft": 0.6820171475410461,
+			"eyeLookOutRight": 0.48830246925354004,
+			"eyeSquintLeft": 0.30196335911750793,
+			"eyeSquintRight": 0.31615522503852844,
+			"mouthLowerDownLeft": 0.2654459476470947,
+			"mouthSmileLeft": 0.7829529643058777,
+			"mouthSmileRight": 0.7555544972419739,
+			"mouthStretchLeft": 0.21668896079063416
+		}
+	},
+	{
+		"ts": 146066.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.5136045217514038,
+			"browOuterUpRight": 0.7214540243148804,
+			"eyeBlinkLeft": 0.2662017047405243,
+			"eyeLookDownLeft": 0.26559680700302124,
+			"eyeLookDownRight": 0.26782092452049255,
+			"eyeSquintLeft": 0.7017689943313599,
+			"eyeSquintRight": 0.39950916171073914,
+			"mouthPressLeft": 0.5407589673995972,
+			"mouthPressRight": 0.21496915817260742
+		}
+	},
+	{
+		"ts": 149766.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.4933914542198181,
+			"browOuterUpRight": 0.5290387272834778,
+			"eyeLookDownLeft": 0.271392285823822,
+			"eyeLookDownRight": 0.30371689796447754,
+			"eyeLookInRight": 0.24012310802936554,
+			"eyeLookOutLeft": 0.23973201215267181,
+			"eyeSquintLeft": 0.5920262336730957,
+			"eyeSquintRight": 0.42845669388771057
+		}
+	},
+	{
+		"ts": 152166.66666666666,
+		"actions": {
+			"browInnerUp": 0.5015825033187866,
+			"browOuterUpLeft": 0.4497288465499878,
+			"browOuterUpRight": 0.4681378901004791,
+			"eyeBlinkLeft": 0.24986402690410614,
+			"eyeLookDownLeft": 0.4273292124271393,
+			"eyeLookDownRight": 0.39865073561668396,
+			"eyeLookInLeft": 0.40326038002967834,
+			"eyeLookOutRight": 0.4200131595134735,
+			"eyeSquintLeft": 0.3018922507762909,
+			"eyeSquintRight": 0.3286047577857971,
+			"mouthRight": 0.22856178879737854
+		}
+	},
+	{
+		"ts": 154900.0,
+		"actions": {
+			"eyeLookInLeft": 0.27919796109199524,
+			"eyeLookOutRight": 0.32165467739105225,
+			"eyeLookUpLeft": 0.33941686153411865,
+			"eyeLookUpRight": 0.38009560108184814,
+			"eyeSquintLeft": 0.373566210269928,
+			"eyeSquintRight": 0.2602459788322449,
+			"mouthPressLeft": 0.47553837299346924
+		}
+	},
+	{
+		"ts": 158366.6666666667,
+		"actions": {
+			"eyeSquintLeft": 0.3482974171638489,
+			"eyeSquintRight": 0.4039638936519623,
+			"mouthPressLeft": 0.3554828464984894
+		}
+	},
+	{
+		"ts": 160866.6666666667,
+		"actions": {
+			"eyeLookInLeft": 0.6597757339477539,
+			"eyeLookOutRight": 0.6731035709381104,
+			"mouthPressLeft": 0.28358691930770874
+		}
+	},
+	{
+		"ts": 163100.0,
+		"actions": {
+			"browOuterUpRight": 0.25903815031051636,
+			"eyeLookInLeft": 0.22483877837657928,
+			"eyeLookOutRight": 0.25348585844039917,
+			"eyeLookUpRight": 0.24109527468681335,
+			"eyeSquintLeft": 0.23550935089588165,
+			"eyeSquintRight": 0.23792773485183716,
+			"mouthPressLeft": 0.22273646295070648
+		}
+	},
+	{
+		"ts": 165633.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.4224851727485657,
+			"browOuterUpRight": 0.4779488146305084,
+			"eyeBlinkLeft": 0.5006306171417236,
+			"eyeBlinkRight": 0.4401649236679077,
+			"eyeLookDownLeft": 0.6648299694061279,
+			"eyeLookDownRight": 0.6842834949493408,
+			"eyeLookInRight": 0.5847184658050537,
+			"eyeLookOutLeft": 0.5948420763015747,
+			"eyeSquintLeft": 0.5329312086105347,
+			"eyeSquintRight": 0.4891313910484314,
+			"mouthPressLeft": 0.42925962805747986
+		}
+	},
+	{
+		"ts": 168900.0,
+		"actions": {
+			"browOuterUpLeft": 0.2087874859571457,
+			"eyeLookInRight": 0.874250590801239,
+			"eyeLookOutLeft": 0.8688644766807556,
+			"eyeLookUpLeft": 0.3975622355937958,
+			"eyeLookUpRight": 0.36732637882232666,
+			"eyeSquintLeft": 0.335618793964386,
+			"eyeSquintRight": 0.26234230399131775,
+			"mouthLowerDownRight": 0.2252756655216217,
+			"mouthStretchLeft": 0.3900139629840851,
+			"mouthStretchRight": 0.3785283863544464
+		}
+	},
+	{
+		"ts": 172066.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.35353899002075195,
+			"browOuterUpRight": 0.37543538212776184,
+			"eyeLookInLeft": 0.5362728834152222,
+			"eyeLookOutRight": 0.5739502906799316,
+			"eyeLookUpLeft": 0.45571520924568176,
+			"eyeLookUpRight": 0.46075382828712463,
+			"eyeSquintLeft": 0.3216327428817749,
+			"mouthPressLeft": 0.26864221692085266
+		}
+	},
+	{
+		"ts": 175200.0,
+		"actions": {
+			"eyeBlinkLeft": 0.22350189089775085,
+			"eyeLookInRight": 0.9041714668273926,
+			"eyeLookOutLeft": 0.9116517901420593,
+			"eyeSquintLeft": 0.5495760440826416,
+			"eyeSquintRight": 0.49460530281066895,
+			"mouthPressLeft": 0.4610658884048462
+		}
+	},
+	{
+		"ts": 178166.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.4053443670272827,
+			"browOuterUpRight": 0.4383000135421753,
+			"eyeLookInLeft": 0.5741150379180908,
+			"eyeLookOutRight": 0.6093456149101257,
+			"eyeLookUpLeft": 0.6211297512054443,
+			"eyeLookUpRight": 0.6389739513397217,
+			"eyeSquintLeft": 0.5940343141555786
+		}
+	},
+	{
+		"ts": 180133.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.6141778826713562,
+			"browOuterUpRight": 0.7155308723449707,
+			"eyeBlinkLeft": 0.576665997505188,
+			"eyeBlinkRight": 0.5046994686126709,
+			"eyeLookDownLeft": 0.6093381643295288,
+			"eyeLookDownRight": 0.6488741636276245,
+			"eyeLookInRight": 0.2475832849740982,
+			"eyeLookOutLeft": 0.24138672649860382,
+			"eyeSquintLeft": 0.6743332743644714,
+			"eyeSquintRight": 0.4855623245239258,
+			"mouthPressLeft": 0.36038830876350403
+		}
+	},
+	{
+		"ts": 182300.0,
+		"actions": {
+			"eyeSquintLeft": 0.2058466523885727,
+			"eyeSquintRight": 0.21630774438381195,
+			"mouthPressLeft": 0.5437248945236206
+		}
+	},
+	{
+		"ts": 184866.6666666667,
+		"actions": {
+			"eyeBlinkLeft": 0.4804501235485077,
+			"eyeBlinkRight": 0.38143911957740784,
+			"eyeLookDownLeft": 0.5922621488571167,
+			"eyeLookDownRight": 0.5989013314247131,
+			"eyeLookInLeft": 0.30562376976013184,
+			"eyeLookOutRight": 0.20073302090168,
+			"eyeSquintLeft": 0.6525375247001648,
+			"eyeSquintRight": 0.3067208230495453,
+			"mouthPressLeft": 0.3399216830730438,
+			"mouthPressRight": 0.20646552741527557
+		}
+	},
+	{
+		"ts": 190566.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.20796798169612885,
+			"eyeBlinkLeft": 0.24250690639019012,
+			"eyeBlinkRight": 0.2630976140499115,
+			"eyeLookDownLeft": 0.28128159046173096,
+			"eyeLookDownRight": 0.4038352370262146,
+			"eyeLookInRight": 0.209454745054245,
+			"eyeSquintLeft": 0.44328629970550537,
+			"eyeSquintRight": 0.361978679895401
+		}
+	},
+	{
+		"ts": 193500.0,
+		"actions": {
+			"browInnerUp": 0.26202282309532166,
+			"eyeBlinkLeft": 0.22755646705627441,
+			"eyeLookUpRight": 0.27445438504219055,
+			"eyeSquintRight": 0.6016072034835815
+		}
+	},
+	{
+		"ts": 196833.33333333334,
+		"actions": {
+			"browOuterUpLeft": 0.20189835131168365,
+			"browOuterUpRight": 0.3562439978122711,
+			"eyeLookOutRight": 0.22006534039974213,
+			"eyeLookUpLeft": 0.33363640308380127,
+			"eyeLookUpRight": 0.37888967990875244
+		}
+	},
+	{
+		"ts": 198533.33333333334,
+		"actions": {
+			"browOuterUpLeft": 0.2779493033885956,
+			"browOuterUpRight": 0.22460708022117615,
+			"eyeLookUpLeft": 0.22891291975975037,
+			"eyeLookUpRight": 0.27552124857902527,
+			"eyeSquintRight": 0.2265819013118744,
+			"mouthPressLeft": 0.2915993630886078
+		}
+	},
+	{
+		"ts": 201300.0,
+		"actions": {
+			"eyeBlinkLeft": 0.23212377727031708,
+			"eyeLookDownLeft": 0.30266568064689636,
+			"eyeLookDownRight": 0.30228233337402344,
+			"eyeLookInLeft": 0.440728098154068,
+			"eyeLookOutRight": 0.4690432548522949,
+			"eyeSquintLeft": 0.2775249183177948,
+			"eyeSquintRight": 0.36005648970603943
+		}
+	},
+	{
+		"ts": 204700.0,
+		"actions": {
+			"browOuterUpLeft": 0.26194632053375244,
+			"browOuterUpRight": 0.2888120710849762,
+			"eyeLookUpLeft": 0.22942271828651428,
+			"eyeLookUpRight": 0.29741814732551575,
+			"eyeSquintRight": 0.34319818019866943
+		}
+	},
+	{
+		"ts": 207933.33333333334,
+		"actions": {
+			"browInnerUp": 0.21689006686210632,
+			"browOuterUpRight": 0.32386553287506104,
+			"eyeBlinkLeft": 0.48533427715301514,
+			"eyeBlinkRight": 0.24517033994197845,
+			"eyeLookDownLeft": 0.4365444779396057,
+			"eyeLookDownRight": 0.3943176567554474,
+			"eyeLookInLeft": 0.24027742445468903,
+			"eyeLookOutRight": 0.2639630436897278,
+			"eyeSquintLeft": 0.3950434625148773,
+			"eyeSquintRight": 0.4282647371292114,
+			"mouthPressLeft": 0.2511999309062958
+		}
+	},
+	{
+		"ts": 211433.33333333334,
+		"actions": {
+			"browOuterUpLeft": 0.25185897946357727,
+			"browOuterUpRight": 0.2961987257003784,
+			"eyeLookOutRight": 0.2265089899301529,
+			"eyeLookUpLeft": 0.22317595779895782,
+			"eyeLookUpRight": 0.2857883870601654
+		}
+	},
+	{
+		"ts": 213633.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.2936740219593048,
+			"eyeLookUpLeft": 0.2050592005252838,
+			"eyeLookUpRight": 0.2605798840522766,
+			"eyeSquintRight": 0.20235846936702728,
+			"mouthPressLeft": 0.21557621657848358
+		}
+	},
+	{
+		"ts": 216400.0,
+		"actions": {
+			"browInnerUp": 0.4083198010921478,
+			"browOuterUpLeft": 0.7146585583686829,
+			"browOuterUpRight": 0.747399628162384,
+			"eyeLookDownLeft": 0.5426622629165649,
+			"eyeLookDownRight": 0.5374863147735596,
+			"eyeLookInRight": 0.2952963709831238,
+			"eyeLookOutLeft": 0.2874094247817993,
+			"eyeSquintLeft": 0.2737596929073334,
+			"eyeSquintRight": 0.4627077579498291
+		}
+	},
+	{
+		"ts": 220066.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.23872029781341553,
+			"browOuterUpRight": 0.29845479130744934,
+			"eyeSquintRight": 0.2501838803291321
+		}
+	},
+	{
+		"ts": 223299.99999999997,
+		"actions": {
+			"browOuterUpRight": 0.2930331826210022,
+			"eyeLookUpLeft": 0.5169957280158997,
+			"eyeLookUpRight": 0.584985613822937,
+			"mouthLowerDownRight": 0.2910884618759155
+		}
+	},
+	{
+		"ts": 225600.0,
+		"actions": {
+			"browOuterUpRight": 0.24213147163391113,
+			"eyeLookUpLeft": 0.5253199338912964,
+			"eyeLookUpRight": 0.5991441607475281,
+			"mouthRight": 0.25859084725379944
+		}
+	},
+	{
+		"ts": 227766.66666666666,
+		"actions": {
+			"browOuterUpRight": 0.21587011218070984,
+			"eyeLookOutRight": 0.20245970785617828,
+			"eyeLookUpLeft": 0.2490345984697342,
+			"eyeLookUpRight": 0.3222992718219757,
+			"eyeSquintRight": 0.22771568596363068,
+			"mouthPressLeft": 0.6018866300582886
+		}
+	},
+	{
+		"ts": 230133.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.292534738779068,
+			"eyeLookUpLeft": 0.4730227291584015,
+			"eyeLookUpRight": 0.5195478796958923,
+			"eyeSquintLeft": 0.21635888516902924,
+			"eyeSquintRight": 0.20772017538547516
+		}
+	},
+	{
+		"ts": 231933.33333333334,
+		"actions": {
+			"browOuterUpLeft": 0.22271443903446198,
+			"browOuterUpRight": 0.3395918309688568,
+			"eyeLookInLeft": 0.6581580638885498,
+			"eyeLookOutRight": 0.6903444528579712,
+			"eyeLookUpRight": 0.24091361463069916
+		}
+	},
+	{
+		"ts": 233900.0,
+		"actions": {
+			"browInnerUp": 0.2948819398880005,
+			"browOuterUpLeft": 0.3003038763999939,
+			"browOuterUpRight": 0.4995311498641968,
+			"eyeLookDownLeft": 0.4128945469856262,
+			"eyeLookDownRight": 0.40176281332969666,
+			"eyeLookInRight": 0.6284395456314087,
+			"eyeLookOutLeft": 0.6142390966415405,
+			"eyeSquintRight": 0.3119683265686035
+		}
+	},
+	{
+		"ts": 235733.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.20849914848804474,
+			"browOuterUpRight": 0.2815808057785034,
+			"eyeLookInLeft": 0.2057397961616516,
+			"eyeLookOutRight": 0.22051815688610077,
+			"eyeLookUpLeft": 0.3158165514469147,
+			"eyeLookUpRight": 0.3296780586242676,
+			"eyeSquintLeft": 0.21058687567710876
+		}
+	},
+	{
+		"ts": 238066.66666666666,
+		"actions": {
+			"browOuterUpLeft": 0.3149120807647705,
+			"eyeLookInLeft": 0.7204158902168274,
+			"eyeLookOutRight": 0.7362734079360962,
+			"mouthPressLeft": 0.6666847467422485,
+			"mouthPressRight": 0.4647570550441742
+		}
+	},
+	{
+		"ts": 240799.99999999997,
+		"actions": {
+			"eyeLookOutRight": 0.20314264297485352,
+			"eyeSquintRight": 0.2524162828922272
+		}
+	},
+	{
+		"ts": 243000.0,
+		"actions": {
+			"browOuterUpRight": 0.2750853896141052,
+			"eyeLookUpLeft": 0.2523511052131653,
+			"eyeLookUpRight": 0.2681513726711273,
+			"eyeSquintLeft": 0.5292603969573975,
+			"eyeSquintRight": 0.3432020843029022,
+			"mouthPressLeft": 0.2034177929162979,
+			"mouthStretchLeft": 0.2541112005710602
+		}
+	},
+	{
+		"ts": 244866.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.2455286830663681,
+			"browOuterUpRight": 0.343661367893219,
+			"eyeLookUpLeft": 0.2905418574810028,
+			"eyeLookUpRight": 0.30979135632514954,
+			"eyeSquintLeft": 0.4308735132217407,
+			"eyeSquintRight": 0.25704315304756165,
+			"mouthLowerDownLeft": 0.5168116092681885,
+			"mouthLowerDownRight": 0.6107650995254517,
+			"mouthStretchLeft": 0.26516950130462646
+		}
+	},
+	{
+		"ts": 247733.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.2721990644931793,
+			"browOuterUpRight": 0.31568142771720886,
+			"eyeLookUpLeft": 0.5253151655197144,
+			"eyeLookUpRight": 0.5694315433502197,
+			"eyeSquintLeft": 0.26656240224838257
+		}
+	},
+	{
+		"ts": 251366.6666666667,
+		"actions": {
+			"browInnerUp": 0.3062030076980591,
+			"browOuterUpLeft": 0.4422188699245453,
+			"browOuterUpRight": 0.663432240486145,
+			"eyeBlinkLeft": 0.21019615232944489,
+			"eyeLookDownLeft": 0.4976707398891449,
+			"eyeLookDownRight": 0.467337042093277,
+			"eyeSquintLeft": 0.2822400629520416,
+			"eyeSquintRight": 0.30658531188964844,
+			"mouthPressLeft": 0.3528926372528076
+		}
+	},
+	{
+		"ts": 254866.6666666667,
+		"actions": {
+			"browOuterUpRight": 0.2916761636734009,
+			"eyeLookUpLeft": 0.35025689005851746,
+			"eyeLookUpRight": 0.42408207058906555,
+			"eyeSquintLeft": 0.2468414157629013,
+			"eyeSquintRight": 0.30182263255119324,
+			"mouthRight": 0.2624744176864624
+		}
+	},
+	{
+		"ts": 258033.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.3343862295150757,
+			"browOuterUpRight": 0.2802586555480957,
+			"eyeLookInLeft": 0.41330650448799133,
+			"eyeLookOutRight": 0.4534936249256134,
+			"eyeLookUpLeft": 0.43041113018989563,
+			"eyeLookUpRight": 0.4786507487297058,
+			"eyeSquintLeft": 0.22265857458114624
+		}
+	},
+	{
+		"ts": 261533.3333333333,
+		"actions": {
+			"browInnerUp": 0.31452813744544983,
+			"browOuterUpLeft": 0.40573006868362427,
+			"browOuterUpRight": 0.5298376083374023,
+			"eyeBlinkLeft": 0.26357731223106384,
+			"eyeLookDownLeft": 0.3819056451320648,
+			"eyeLookDownRight": 0.3333849310874939,
+			"eyeLookInLeft": 0.5311630964279175,
+			"eyeLookOutRight": 0.5451012849807739,
+			"eyeSquintLeft": 0.3322879672050476,
+			"eyeSquintRight": 0.2854207456111908,
+			"mouthRight": 0.30726858973503113
+		}
+	},
+	{
+		"ts": 264666.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.3008902966976166,
+			"browOuterUpRight": 0.3406672179698944,
+			"eyeLookUpLeft": 0.5902478694915771,
+			"eyeLookUpRight": 0.6201600432395935,
+			"eyeSquintLeft": 0.20391593873500824
+		}
+	},
+	{
+		"ts": 267333.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.30836421251296997,
+			"browOuterUpRight": 0.45805415511131287,
+			"eyeLookUpLeft": 0.2664385437965393,
+			"eyeLookUpRight": 0.3101241886615753
+		}
+	},
+	{
+		"ts": 270266.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.301543265581131,
+			"browOuterUpRight": 0.44038262963294983,
+			"eyeLookOutRight": 0.2399066537618637,
+			"eyeLookUpLeft": 0.4874586760997772,
+			"eyeLookUpRight": 0.5478609800338745,
+			"eyeSquintLeft": 0.26333722472190857,
+			"eyeSquintRight": 0.23207707703113556,
+			"mouthRight": 0.22313183546066284
+		}
+	},
+	{
+		"ts": 273833.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.24573108553886414,
+			"eyeLookInLeft": 0.216607466340065,
+			"eyeLookOutRight": 0.2496296763420105,
+			"eyeSquintRight": 0.33833184838294983
+		}
+	},
+	{
+		"ts": 277500.0,
+		"actions": {
+			"eyeLookUpLeft": 0.21107476949691772,
+			"eyeLookUpRight": 0.2792001962661743,
+			"eyeSquintRight": 0.26565805077552795,
+			"mouthPressLeft": 0.5268024206161499
+		}
+	},
+	{
+		"ts": 281166.6666666667,
+		"actions": {
+			"browInnerUp": 0.4227297306060791,
+			"browOuterUpLeft": 0.5878807306289673,
+			"browOuterUpRight": 0.7842920422554016,
+			"eyeLookDownLeft": 0.44619786739349365,
+			"eyeLookDownRight": 0.4484621286392212,
+			"eyeLookInRight": 0.6893285512924194,
+			"eyeLookOutLeft": 0.6775989532470703,
+			"eyeSquintLeft": 0.3434017598628998,
+			"eyeSquintRight": 0.41740700602531433,
+			"mouthLowerDownLeft": 0.2078206092119217,
+			"mouthLowerDownRight": 0.2653510272502899
+		}
+	},
+	{
+		"ts": 283900.0,
+		"actions": {
+			"browOuterUpRight": 0.25554540753364563,
+			"eyeLookInLeft": 0.3588965833187103,
+			"eyeLookOutRight": 0.4037178158760071,
+			"eyeLookUpLeft": 0.5039488077163696,
+			"eyeLookUpRight": 0.5499372482299805,
+			"eyeSquintLeft": 0.2071089893579483
+		}
+	},
+	{
+		"ts": 287733.3333333334,
+		"actions": {
+			"browInnerUp": 0.32612642645835876,
+			"browOuterUpLeft": 0.6831690073013306,
+			"browOuterUpRight": 0.7953122854232788,
+			"eyeLookDownLeft": 0.39547982811927795,
+			"eyeLookDownRight": 0.39339813590049744,
+			"eyeLookInRight": 0.44762122631073,
+			"eyeLookOutLeft": 0.4263193607330322,
+			"eyeSquintLeft": 0.39794015884399414,
+			"eyeSquintRight": 0.4285784661769867
+		}
+	},
+	{
+		"ts": 291233.3333333334,
+		"actions": {
+			"browOuterUpRight": 0.28497159481048584,
+			"eyeLookUpLeft": 0.45616376399993896,
+			"eyeLookUpRight": 0.4906728267669678,
+			"eyeSquintLeft": 0.22039580345153809
+		}
+	},
+	{
+		"ts": 294700.0,
+		"actions": {
+			"browOuterUpRight": 0.24898862838745117,
+			"eyeLookInLeft": 0.28038132190704346,
+			"eyeLookOutRight": 0.32811999320983887,
+			"eyeLookUpLeft": 0.5268705487251282,
+			"eyeLookUpRight": 0.5755757093429565,
+			"eyeSquintRight": 0.20414726436138153
+		}
+	},
+	{
+		"ts": 297266.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.2199181765317917,
+			"browOuterUpRight": 0.236581489443779,
+			"eyeLookOutRight": 0.20330442488193512,
+			"mouthPressLeft": 0.36234426498413086
+		}
+	},
+	{
+		"ts": 299733.3333333334,
+		"actions": {
+			"eyeLookUpLeft": 0.2880457043647766,
+			"eyeLookUpRight": 0.3321012258529663,
+			"eyeSquintLeft": 0.27784866094589233,
+			"eyeSquintRight": 0.3312573730945587,
+			"mouthPressLeft": 0.49300694465637207
+		}
+	},
+	{
+		"ts": 303366.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.263239324092865,
+			"browOuterUpRight": 0.4132596552371979,
+			"eyeBlinkLeft": 0.7039135694503784,
+			"eyeBlinkRight": 0.430171400308609,
+			"eyeLookDownLeft": 0.769673764705658,
+			"eyeLookDownRight": 0.770277738571167,
+			"eyeLookInLeft": 0.22645649313926697,
+			"eyeLookOutRight": 0.20267464220523834,
+			"eyeSquintLeft": 0.6627966165542603,
+			"eyeSquintRight": 0.3929915130138397,
+			"mouthPressLeft": 0.3655979335308075,
+			"mouthSmileLeft": 0.6164072751998901,
+			"mouthSmileRight": 0.5277633666992188
+		}
+	},
+	{
+		"ts": 306200.0,
+		"actions": {
+			"eyeBlinkLeft": 0.32543373107910156,
+			"eyeLookDownLeft": 0.33497077226638794,
+			"eyeLookDownRight": 0.29205089807510376,
+			"eyeSquintLeft": 0.27060213685035706,
+			"eyeSquintRight": 0.4368622899055481,
+			"mouthSmileLeft": 0.3591254949569702,
+			"mouthSmileRight": 0.22432906925678253
+		}
+	},
+	{
+		"ts": 309366.6666666667,
+		"actions": {
+			"browOuterUpRight": 0.2993019223213196,
+			"eyeLookUpLeft": 0.2819044291973114,
+			"eyeLookUpRight": 0.3040045499801636,
+			"eyeSquintLeft": 0.2594330906867981,
+			"mouthPressLeft": 0.441631942987442
+		}
+	},
+	{
+		"ts": 313200.0,
+		"actions": {
+			"eyeLookInLeft": 0.7992973923683167,
+			"eyeLookOutRight": 0.7941396832466125,
+			"eyeSquintLeft": 0.2160651683807373,
+			"mouthPressLeft": 0.4382452368736267
+		}
+	},
+	{
+		"ts": 316866.6666666667,
+		"actions": {
+			"eyeLookInLeft": 0.6988409161567688,
+			"eyeLookOutRight": 0.7169565558433533,
+			"mouthSmileLeft": 0.31147149205207825,
+			"mouthSmileRight": 0.2352921962738037
+		}
+	},
+	{
+		"ts": 319833.3333333333,
+		"actions": {
+			"eyeSquintRight": 0.271655797958374,
+			"mouthPressLeft": 0.21466100215911865
+		}
+	},
+	{
+		"ts": 323333.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.41156041622161865,
+			"eyeSquintLeft": 0.2802823483943939,
+			"eyeSquintRight": 0.24809664487838745
+		}
+	},
+	{
+		"ts": 326733.3333333334,
+		"actions": {
+			"eyeLookInLeft": 0.787803053855896,
+			"eyeLookOutRight": 0.6198972463607788,
+			"eyeLookUpLeft": 0.39441680908203125,
+			"eyeLookUpRight": 0.20613078773021698,
+			"eyeSquintLeft": 0.4207151532173157,
+			"mouthPressLeft": 0.30638596415519714,
+			"mouthPucker": 0.22373896837234497
+		}
+	},
+	{
+		"ts": 330500.0,
+		"actions": {
+			"browOuterUpLeft": 0.5769051313400269,
+			"eyeLookDownRight": 0.26290422677993774,
+			"eyeLookInLeft": 0.3307683765888214,
+			"eyeLookOutRight": 0.3441891670227051,
+			"eyeSquintLeft": 0.27678781747817993,
+			"mouthPressLeft": 0.23750853538513184,
+			"mouthSmileLeft": 0.2518535554409027,
+			"mouthSmileRight": 0.33351844549179077
+		}
+	},
+	{
+		"ts": 333400.0,
+		"actions": {
+			"eyeLookInLeft": 0.2332579791545868,
+			"eyeLookOutRight": 0.26433178782463074
+		}
+	},
+	{
+		"ts": 336100.0,
+		"actions": {
+			"browOuterUpRight": 0.2244604527950287,
+			"eyeBlinkLeft": 0.3352206349372864,
+			"eyeLookDownLeft": 0.35952532291412354,
+			"eyeLookDownRight": 0.32768523693084717,
+			"eyeLookInRight": 0.266661137342453,
+			"eyeLookOutLeft": 0.26418226957321167,
+			"eyeSquintLeft": 0.5892151594161987,
+			"eyeSquintRight": 0.44249439239501953,
+			"mouthPressLeft": 0.6742041110992432,
+			"mouthPressRight": 0.25855791568756104,
+			"mouthShrugLower": 0.4688481092453003
+		}
+	},
+	{
+		"ts": 339400.0,
+		"actions": {
+			"browOuterUpLeft": 0.2543274760246277,
+			"browOuterUpRight": 0.386564165353775,
+			"eyeLookInLeft": 0.23056086897850037,
+			"eyeLookOutRight": 0.28308677673339844,
+			"eyeLookUpLeft": 0.30075863003730774,
+			"eyeLookUpRight": 0.3349717855453491,
+			"eyeSquintLeft": 0.2592010796070099,
+			"mouthLowerDownLeft": 0.44014772772789,
+			"mouthLowerDownRight": 0.5682545900344849
+		}
+	},
+	{
+		"ts": 342166.6666666667,
+		"actions": {
+			"browInnerUp": 0.20916523039340973,
+			"browOuterUpLeft": 0.4830491840839386,
+			"browOuterUpRight": 0.6770942211151123,
+			"eyeBlinkLeft": 0.4004964530467987,
+			"eyeBlinkRight": 0.27434295415878296,
+			"eyeLookDownLeft": 0.5742858648300171,
+			"eyeLookDownRight": 0.6086138486862183,
+			"eyeLookInRight": 0.25696805119514465,
+			"eyeLookOutLeft": 0.25368982553482056,
+			"eyeSquintLeft": 0.5326852798461914,
+			"eyeSquintRight": 0.4741966426372528,
+			"mouthPressLeft": 0.629734992980957,
+			"mouthPressRight": 0.22714194655418396
+		}
+	},
+	{
+		"ts": 344833.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.49009424448013306,
+			"browOuterUpRight": 0.6390573978424072,
+			"eyeBlinkLeft": 0.33522137999534607,
+			"eyeBlinkRight": 0.3177533447742462,
+			"eyeLookDownLeft": 0.442080020904541,
+			"eyeLookDownRight": 0.43411099910736084,
+			"eyeLookInRight": 0.21859215199947357,
+			"eyeLookOutLeft": 0.22740879654884338,
+			"eyeSquintLeft": 0.5928066372871399,
+			"eyeSquintRight": 0.4885484576225281,
+			"mouthPressLeft": 0.3498000204563141
+		}
+	},
+	{
+		"ts": 347800.0,
+		"actions": {
+			"browInnerUp": 0.2116951048374176,
+			"browOuterUpLeft": 0.3497621417045593,
+			"browOuterUpRight": 0.5678591728210449,
+			"eyeBlinkLeft": 0.37302711606025696,
+			"eyeBlinkRight": 0.2108498513698578,
+			"eyeLookDownLeft": 0.27332741022109985,
+			"eyeLookDownRight": 0.22042222321033478,
+			"eyeLookInLeft": 0.29329654574394226,
+			"eyeLookOutRight": 0.309541791677475,
+			"eyeSquintLeft": 0.5568427443504333,
+			"eyeSquintRight": 0.453682541847229,
+			"mouthPucker": 0.26518362760543823,
+			"mouthRight": 0.2183416783809662
+		}
+	},
+	{
+		"ts": 351566.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.3820841610431671,
+			"browOuterUpRight": 0.49382033944129944,
+			"eyeLookUpLeft": 0.4829878807067871,
+			"eyeLookUpRight": 0.5357187390327454,
+			"eyeSquintLeft": 0.21383783221244812,
+			"eyeSquintRight": 0.22123706340789795
+		}
+	},
+	{
+		"ts": 355266.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.357014924287796,
+			"eyeLookInRight": 0.8524525165557861,
+			"eyeLookOutLeft": 0.8573446273803711,
+			"eyeLookUpLeft": 0.2780502140522003,
+			"eyeLookUpRight": 0.2432692050933838,
+			"eyeSquintLeft": 0.46874868869781494,
+			"eyeSquintRight": 0.3205726444721222,
+			"jawOpen": 0.29788464307785034,
+			"mouthRollUpper": 0.26096901297569275
+		}
+	},
+	{
+		"ts": 358633.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.3153672218322754,
+			"browOuterUpRight": 0.23235544562339783,
+			"eyeLookInLeft": 0.3990059792995453,
+			"eyeLookOutRight": 0.40613415837287903,
+			"eyeLookUpLeft": 0.3381999135017395,
+			"eyeLookUpRight": 0.35905730724334717,
+			"eyeSquintLeft": 0.3797001838684082,
+			"jawOpen": 0.22175614535808563
+		}
+	},
+	{
+		"ts": 361366.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.24582265317440033,
+			"browOuterUpRight": 0.2022470384836197,
+			"eyeLookInLeft": 0.42433327436447144,
+			"eyeLookOutRight": 0.4365204870700836,
+			"eyeLookUpLeft": 0.3972509205341339,
+			"eyeLookUpRight": 0.4093170464038849,
+			"eyeSquintLeft": 0.42314955592155457
+		}
+	},
+	{
+		"ts": 364200.0,
+		"actions": {
+			"browOuterUpLeft": 0.35076576471328735,
+			"eyeLookInRight": 0.8711624145507812,
+			"eyeLookOutLeft": 0.8691632747650146,
+			"eyeLookUpLeft": 0.3023589551448822,
+			"eyeLookUpRight": 0.3016708791255951,
+			"eyeSquintLeft": 0.2802218496799469,
+			"mouthPressRight": 0.20767304301261902
+		}
+	},
+	{
+		"ts": 367766.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.653806746006012,
+			"browOuterUpRight": 0.5236438512802124,
+			"eyeBlinkLeft": 0.3318014442920685,
+			"eyeBlinkRight": 0.3358807861804962,
+			"eyeLookDownLeft": 0.3500829041004181,
+			"eyeLookDownRight": 0.35755616426467896,
+			"eyeLookInRight": 0.23848821222782135,
+			"eyeLookOutLeft": 0.2458222210407257,
+			"eyeSquintLeft": 0.6745527982711792,
+			"eyeSquintRight": 0.4415389597415924
+		}
+	},
+	{
+		"ts": 370833.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.43126487731933594,
+			"eyeLookInRight": 0.7948535680770874,
+			"eyeLookOutLeft": 0.7946286797523499,
+			"eyeLookUpLeft": 0.32571732997894287,
+			"eyeLookUpRight": 0.3269743025302887,
+			"eyeSquintLeft": 0.28566113114356995,
+			"eyeSquintRight": 0.2378048300743103,
+			"mouthPressRight": 0.2373422384262085,
+			"mouthRollLower": 0.31228017807006836,
+			"mouthShrugLower": 0.28766289353370667
+		}
+	},
+	{
+		"ts": 373933.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.6048189401626587,
+			"browOuterUpRight": 0.5447143316268921,
+			"eyeBlinkLeft": 0.26057207584381104,
+			"eyeLookDownLeft": 0.593767523765564,
+			"eyeLookDownRight": 0.5877335071563721,
+			"eyeLookInLeft": 0.4150025546550751,
+			"eyeLookOutRight": 0.41366198658943176,
+			"eyeSquintLeft": 0.5958331823348999,
+			"eyeSquintRight": 0.36385637521743774,
+			"jawOpen": 0.24611970782279968
+		}
+	},
+	{
+		"ts": 376766.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.3778825104236603,
+			"browOuterUpRight": 0.22679036855697632,
+			"eyeLookInRight": 0.8478454351425171,
+			"eyeLookOutLeft": 0.8465791940689087,
+			"eyeLookUpLeft": 0.6013168096542358,
+			"eyeLookUpRight": 0.5946329832077026,
+			"eyeSquintLeft": 0.3373582661151886,
+			"eyeSquintRight": 0.21026194095611572,
+			"mouthRollLower": 0.2079501450061798
+		}
+	},
+	{
+		"ts": 380300.0,
+		"actions": {
+			"browOuterUpLeft": 0.3297608196735382,
+			"browOuterUpRight": 0.2774539589881897,
+			"eyeLookInLeft": 0.3221004903316498,
+			"eyeLookOutRight": 0.334677517414093,
+			"eyeLookUpLeft": 0.34076985716819763,
+			"eyeLookUpRight": 0.36129051446914673,
+			"eyeSquintLeft": 0.4137648940086365
+		}
+	},
+	{
+		"ts": 383566.6666666667,
+		"actions": {
+			"browInnerUp": 0.23380234837532043,
+			"browOuterUpLeft": 0.6015021800994873,
+			"browOuterUpRight": 0.6952353715896606,
+			"eyeLookDownLeft": 0.3783784806728363,
+			"eyeLookDownRight": 0.35674849152565,
+			"eyeSquintLeft": 0.41962775588035583,
+			"eyeSquintRight": 0.48657044768333435,
+			"mouthPressLeft": 0.36168593168258667
+		}
+	},
+	{
+		"ts": 387600.0,
+		"actions": {
+			"browOuterUpLeft": 0.2054581642150879,
+			"browOuterUpRight": 0.2923652231693268,
+			"eyeLookInLeft": 0.2301924079656601,
+			"eyeLookOutRight": 0.25793424248695374,
+			"mouthPressLeft": 0.2734113931655884
+		}
+	},
+	{
+		"ts": 391633.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.38362646102905273,
+			"browOuterUpRight": 0.3946475386619568,
+			"eyeSquintLeft": 0.25360849499702454
+		}
+	},
+	{
+		"ts": 395166.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.4043927788734436,
+			"browOuterUpRight": 0.3790687620639801,
+			"eyeBlinkLeft": 0.2532804310321808,
+			"eyeBlinkRight": 0.2006615549325943,
+			"eyeLookDownRight": 0.20670685172080994,
+			"eyeSquintLeft": 0.6845046281814575,
+			"eyeSquintRight": 0.5173560976982117
+		}
+	},
+	{
+		"ts": 398633.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.4076935946941376,
+			"browOuterUpRight": 0.559202253818512,
+			"eyeLookInRight": 0.44376322627067566,
+			"eyeLookOutLeft": 0.4626466631889343,
+			"eyeSquintLeft": 0.572409987449646,
+			"eyeSquintRight": 0.5054452419281006,
+			"mouthPucker": 0.29872366786003113
+		}
+	},
+	{
+		"ts": 402066.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.3040209114551544,
+			"browOuterUpRight": 0.31325116753578186,
+			"eyeLookInRight": 0.43280699849128723,
+			"eyeLookOutLeft": 0.4488281309604645,
+			"eyeSquintLeft": 0.5213532447814941,
+			"eyeSquintRight": 0.5288480520248413,
+			"mouthPucker": 0.3611755967140198
+		}
+	},
+	{
+		"ts": 405533.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.2551276683807373,
+			"browOuterUpRight": 0.3031233251094818,
+			"eyeBlinkLeft": 0.3271351754665375,
+			"eyeBlinkRight": 0.28523391485214233,
+			"eyeLookDownLeft": 0.5393760204315186,
+			"eyeLookDownRight": 0.5389638543128967,
+			"eyeLookInLeft": 0.3420707881450653,
+			"eyeLookOutRight": 0.375171422958374,
+			"eyeSquintLeft": 0.43843865394592285,
+			"eyeSquintRight": 0.4247339069843292,
+			"mouthRight": 0.271386981010437
+		}
+	},
+	{
+		"ts": 409333.3333333333,
+		"actions": {
+			"browInnerUp": 0.3166635036468506,
+			"browOuterUpLeft": 0.6437260508537292,
+			"browOuterUpRight": 0.6955101490020752,
+			"eyeBlinkRight": 0.24202914535999298,
+			"eyeLookDownLeft": 0.4686938226222992,
+			"eyeLookDownRight": 0.4693533480167389,
+			"eyeLookInRight": 0.48295289278030396,
+			"eyeLookOutLeft": 0.4721318483352661,
+			"eyeSquintLeft": 0.3494820296764374,
+			"eyeSquintRight": 0.48499664664268494
+		}
+	},
+	{
+		"ts": 412800.0,
+		"actions": {
+			"browOuterUpLeft": 0.3595063090324402,
+			"browOuterUpRight": 0.34685054421424866,
+			"eyeLookUpLeft": 0.30795741081237793,
+			"eyeLookUpRight": 0.33467161655426025,
+			"eyeSquintLeft": 0.23368234932422638,
+			"mouthPressLeft": 0.24905085563659668
+		}
+	},
+	{
+		"ts": 415400.0,
+		"actions": {
+			"browOuterUpLeft": 0.2853267788887024,
+			"browOuterUpRight": 0.2570805251598358,
+			"eyeLookUpLeft": 0.39679238200187683,
+			"eyeLookUpRight": 0.40859249234199524,
+			"eyeSquintLeft": 0.49945977330207825,
+			"eyeSquintRight": 0.29916876554489136,
+			"mouthPressLeft": 0.2339901179075241
+		}
+	},
+	{
+		"ts": 418133.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.4781110882759094,
+			"browOuterUpRight": 0.7084557414054871,
+			"eyeBlinkLeft": 0.3684829771518707,
+			"eyeBlinkRight": 0.3200153410434723,
+			"eyeLookDownLeft": 0.5303723812103271,
+			"eyeLookDownRight": 0.5552142858505249,
+			"eyeLookInLeft": 0.3451565206050873,
+			"eyeLookOutRight": 0.35729092359542847,
+			"eyeSquintLeft": 0.5521055459976196,
+			"eyeSquintRight": 0.4089052975177765
+		}
+	},
+	{
+		"ts": 421666.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.28664034605026245,
+			"browOuterUpRight": 0.44278067350387573,
+			"eyeBlinkLeft": 0.2996794581413269,
+			"eyeBlinkRight": 0.3313547968864441,
+			"eyeLookDownLeft": 0.48422980308532715,
+			"eyeLookDownRight": 0.5004486441612244,
+			"eyeSquintLeft": 0.423578679561615,
+			"eyeSquintRight": 0.5136353969573975
+		}
+	},
+	{
+		"ts": 425566.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.27207151055336,
+			"browOuterUpRight": 0.27452006936073303,
+			"eyeLookInLeft": 0.26111069321632385,
+			"eyeLookOutRight": 0.27526935935020447,
+			"eyeSquintLeft": 0.23835663497447968
+		}
+	},
+	{
+		"ts": 428333.3333333333,
+		"actions": {
+			"browOuterUpLeft": 0.230338916182518,
+			"eyeLookInRight": 0.9282473921775818,
+			"eyeLookOutLeft": 0.9272419214248657,
+			"eyeLookUpLeft": 0.3369556963443756,
+			"eyeLookUpRight": 0.34349527955055237,
+			"eyeSquintLeft": 0.41224586963653564,
+			"eyeSquintRight": 0.45250341296195984
+		}
+	},
+	{
+		"ts": 432400.0,
+		"actions": {
+			"browOuterUpLeft": 0.20542781054973602,
+			"browOuterUpRight": 0.2362283170223236,
+			"eyeLookInLeft": 0.24003896117210388,
+			"eyeLookOutRight": 0.25476881861686707,
+			"eyeLookUpLeft": 0.3459918797016144,
+			"eyeLookUpRight": 0.3295685648918152,
+			"eyeSquintLeft": 0.4648960530757904
+		}
+	},
+	{
+		"ts": 435599.99999999994,
+		"actions": {
+			"browOuterUpLeft": 0.5641947984695435,
+			"browOuterUpRight": 0.650598406791687,
+			"eyeBlinkLeft": 0.25670111179351807,
+			"eyeBlinkRight": 0.2252073734998703,
+			"eyeLookDownLeft": 0.5828193426132202,
+			"eyeLookDownRight": 0.5970696210861206,
+			"eyeLookInRight": 0.2530806362628937,
+			"eyeLookOutLeft": 0.2532913088798523,
+			"eyeSquintLeft": 0.49084633588790894,
+			"eyeSquintRight": 0.3820663094520569
+		}
+	},
+	{
+		"ts": 438366.6666666667,
+		"actions": {
+			"browOuterUpLeft": 0.3512066602706909,
+			"eyeLookInRight": 0.9279994964599609,
+			"eyeLookOutLeft": 0.9279823303222656,
+			"eyeLookUpLeft": 0.5748335123062134,
+			"eyeLookUpRight": 0.5903931260108948,
+			"eyeSquintLeft": 0.24381184577941895,
+			"eyeSquintRight": 0.2502134442329407
+		}
+	},
+	{
+		"ts": 441966.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.35099366307258606,
+			"browOuterUpRight": 0.34419822692871094,
+			"eyeLookInLeft": 0.4885988235473633,
+			"eyeLookOutRight": 0.5008729696273804,
+			"eyeLookUpLeft": 0.38103464245796204,
+			"eyeLookUpRight": 0.3896295130252838,
+			"eyeSquintLeft": 0.5410946607589722,
+			"eyeSquintRight": 0.40883952379226685
+		}
+	},
+	{
+		"ts": 444766.6666666666,
+		"actions": {
+			"browOuterUpLeft": 0.21497400104999542,
+			"browOuterUpRight": 0.2573106288909912,
+			"eyeLookInLeft": 0.2630387246608734,
+			"eyeLookOutRight": 0.2618880271911621,
+			"eyeSquintLeft": 0.29365527629852295
+		}
+	},
+	{
+		"ts": 447099.99999999994,
+		"actions": {
+			"eyeLookInLeft": 0.8894320726394653,
+			"eyeLookOutRight": 0.907300591468811,
+			"eyeWideRight": 0.21111798286437988
+		}
+	},
+	{
+		"ts": 450066.6666666667,
+		"actions": {
+			"eyeLookInLeft": 0.5858913660049438,
+			"eyeLookOutRight": 0.6203111410140991,
+			"mouthPressLeft": 0.2511005103588104
+		}
+	},
+	{
+		"ts": 452566.6666666667,
+		"actions": {
+			"browInnerUp": 0.312424898147583,
+			"browOuterUpLeft": 0.6081509590148926,
+			"browOuterUpRight": 0.7035138607025146,
+			"eyeBlinkLeft": 0.20543412864208221,
+			"eyeBlinkRight": 0.2604650855064392,
+			"eyeLookDownLeft": 0.5586037635803223,
+			"eyeLookDownRight": 0.5673631429672241,
+			"eyeLookInRight": 0.412723183631897,
+			"eyeLookOutLeft": 0.4095546305179596,
+			"eyeSquintLeft": 0.3960970342159271,
+			"eyeSquintRight": 0.4357631504535675
+		}
+	},
+	{
+		"ts": 455133.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.2542593777179718,
+			"eyeLookInLeft": 0.8387131094932556,
+			"eyeLookOutRight": 0.8628747463226318,
+			"eyeLookUpRight": 0.23047012090682983,
+			"mouthPressLeft": 0.42097771167755127
+		}
+	},
+	{
+		"ts": 458366.6666666667,
+		"actions": {
+			"eyeSquintLeft": 0.22881315648555756,
+			"eyeSquintRight": 0.3161872625350952,
+			"mouthPressLeft": 0.3999307155609131
+		}
+	},
+	{
+		"ts": 462166.6666666667,
+		"actions": {
+			"browOuterUpRight": 0.38902977108955383,
+			"eyeLookDownLeft": 0.29551962018013,
+			"eyeLookDownRight": 0.3291863203048706,
+			"eyeSquintLeft": 0.2576791048049927,
+			"eyeSquintRight": 0.2426089346408844,
+			"mouthPressLeft": 0.39764687418937683
+		}
+	},
+	{
+		"ts": 465333.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.29972052574157715,
+			"eyeLookDownLeft": 0.32309794425964355,
+			"eyeLookDownRight": 0.3599868714809418,
+			"eyeSquintLeft": 0.30851173400878906,
+			"eyeSquintRight": 0.2942468822002411,
+			"mouthPressLeft": 0.24410252273082733
+		}
+	},
+	{
+		"ts": 468666.6666666667,
+		"actions": {
+			"eyeSquintLeft": 0.30917811393737793,
+			"mouthPressLeft": 0.39928770065307617
+		}
+	},
+	{
+		"ts": 472033.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.22535662353038788,
+			"eyeSquintLeft": 0.21615518629550934,
+			"mouthPressLeft": 0.4195820689201355
+		}
+	},
+	{
+		"ts": 474366.6666666667,
+		"actions": { "browOuterUpRight": 0.21131232380867004 }
+	},
+	{
+		"ts": 476966.6666666666,
+		"actions": {
+			"browInnerUp": 0.7728777527809143,
+			"browOuterUpLeft": 0.4753424823284149,
+			"browOuterUpRight": 0.30880916118621826,
+			"eyeLookOutRight": 0.2013942003250122,
+			"eyeLookUpLeft": 0.2176220566034317,
+			"eyeLookUpRight": 0.29257312417030334,
+			"eyeSquintRight": 0.3415840268135071,
+			"mouthFrownLeft": 0.42990297079086304,
+			"mouthFrownRight": 0.3790353536605835,
+			"mouthShrugLower": 0.25615963339805603
+		}
+	},
+	{
+		"ts": 478433.3333333333,
+		"actions": {
+			"browOuterUpRight": 0.2052890509366989,
+			"eyeBlinkLeft": 0.4066825807094574,
+			"eyeBlinkRight": 0.2146056592464447,
+			"eyeLookDownLeft": 0.40839502215385437,
+			"eyeLookDownRight": 0.3807603418827057,
+			"eyeLookInRight": 0.20442278683185577,
+			"eyeLookOutLeft": 0.2168215662240982,
+			"eyeSquintLeft": 0.44905105233192444,
+			"eyeSquintRight": 0.5166628360748291,
+			"mouthPressLeft": 0.41645681858062744
+		}
+	}
+]
