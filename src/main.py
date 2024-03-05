@@ -40,13 +40,24 @@ if __name__ == "__main__":
     # # Example of video artifact detection output - intervals of seconds with actions
     artifact_intervals = [
         (1.0, 1.5, "HEAD_LEFT"),
+        (1.6, 1.8, "HEAD_LEFT"),
         (5.2, 6.4, "STAND"),
         (9.1, 9.4, "BLINK"),
     ]
 
     raw_eeg = eeg.io.read_edf_file(eeg_filepath)
-    processed_eeg = eeg.filtering.clean_eeg(raw_eeg, artifact_intervals, method="fft")
-    eeg.io.write_edf_file(processed_eeg, "cleaned_eeg.edf")
+    raw_eeg_df = raw_eeg.to_data_frame()
+    # .to_data_frame returns in microvolts, need to convert to volts
+    # to form correct mne Raw object
+    raw_eeg_df.loc[:, raw_eeg_df.columns != "time"] = (
+        raw_eeg_df.loc[:, raw_eeg_df.columns != "time"] / 1e6
+    )
+
+    cleaned_eeg = eeg.filtering.clean_eeg(
+        raw_eeg_df, raw_eeg.info["sfreq"], artifact_intervals, method="fft"
+    )
+    cleaned_eeg = eeg.filtering.make_mne_raw(cleaned_eeg.values, raw_eeg.info)
+    eeg.io.write_edf_file(cleaned_eeg, "cleaned_eeg.edf")
 
     end_dttm = datetime.datetime.now()
     print(f"EEG artifact cleaning finished in {end_dttm - start_dttm} seconds")
@@ -56,14 +67,12 @@ if __name__ == "__main__":
     cln = eeg.io.read_edf_file("cleaned_eeg.edf")
     rw.crop(tmin=0.5, tmax=10).plot(
         n_channels=6,
-        # scalings=0.00005,
-        scalings="auto",
+        scalings=0.00005,
         title="Before artifact removal",
     )
     cln.crop(tmin=0.5, tmax=10).plot(
         n_channels=6,
-        # scalings=0.00005,
-        scalings="auto",
+        scalings=0.00005,
         title="After artifact removal",
     )
 

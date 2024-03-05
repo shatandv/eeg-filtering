@@ -18,71 +18,102 @@ import eeg.default
 
 
 def clean_with_fft(
-    raw: mne.io.Raw,
+    raw_df: pd.DataFrame,
+    sample_freq: int,
     artifact_intervals: list[tuple[float, float, str]],
     artifact_specs: dict[str, dict[str, list]],
-    sample_freq: int,
+    fft_padding_samples: int = 2,
+    fft_cleaning_window: int = 2,
+    zeroing_coef: float = 0.001,
 ) -> pd.DataFrame:
-    # sample_freq = raw.info["sfreq"]
-    raw_df: pd.DataFrame = raw.to_data_frame()
-    # .to_data_frame returns in microvolts, need to convert to volts
-    # for future operations
-    raw_df.loc[:, raw_df.columns != "time"] = (
-        raw_df.loc[:, raw_df.columns != "time"] / 1e6
-    )
+    """Clean EEG data with fast fourier transform by filtering frequency ranges.
+
+    Args:
+        raw_df: Raw EEG data dataframe.
+        sample_freq: Sampling frequency of the EEG data.
+        artifact_intervals: Intervals of seconds with actions that are considered artifacts.
+            Used in selective channel cleaning.
+            Example: [(1.0, 1.5, "HEAD_LEFT"), (5.2, 6.4, "STAND"), (9.1, 9.4, "BLINK")].
+        artifact_specs: Dictionary of artifact types and their respective channels
+            and frequencies to clean.
+            The frequency is a list of tuples (freq1, freq2) of inclusive frequency ranges.
+                If the freq1 < freq2, all frequencies in the range are cleaned.
+                If the freq1 == freq2, only that frequency is cleaned.
+                If freq1 is None, all frequencies up to the freq2 are cleaned.
+                If freq2 is None, all frequencies from the freq1 are cleaned.
+                If both freq1 and freq2 are None, all frequencies are cleaned.
+                Pass an empty list to clean nothing.
+            Defaults to eeg.default.DEFAULT_ACTION_ARTIFACT_FREQS.
+            Example: {
+                "HEAD_LEFT": {"Fp1": [(0.1, 8)], "Fp2": [(0.1, 8)]},
+                "STAND": {"O1": [(0.1, 8)], "T3": [(0.1, 8)]},
+                "BLINK": {"O1": [(0.1, 8)], "O2": [(0.1, 8)]},
+            }.
+        fft_padding_samples: How many neighboring samples to take into account for FFT cleaning.
+            Defaults to 2.
+        fft_cleaning_window: How many neighboring frequency bins to clean around the target frequency.
+            Defaults to 2.
+        zeroing_coef: Coefficient to scale minimum value of the data to zero out
+            frequencies with.
+            Defaults to 0.001.
+
+    Returns:
+        pd.DataFrame: Сleaned EEG data dataframe.
+    """
+    # Value to zero out frequencies with
+    zeroing_value = raw_df.drop(columns=["time"]).abs().min().min() * zeroing_coef
+
+    # Get FFT frequencies
     n_samples = raw_df.shape[0]
-    # fft_discretization = 32767
-    # zeroing_value = 0.001 * fft_discretization
-    zeroing_value = 0.0001
-
-    # ch_means = raw_df.mean()
-    # ch_maxes = raw_df.max()
-
-    # Максимальная частота составляет половину частоты дискретизации
     fft_freqs = scipy.fft.rfftfreq(n_samples, 1 / sample_freq)
+    # Max frequency in FFT is half of the sampling frequency
     samples_per_freq = len(fft_freqs) / (sample_freq / 2)
+
+    # Clean selective channels based on detected artifacts
     for start, stop, action in artifact_intervals:
         artifact_channels = artifact_specs.get(action, None)
         if artifact_channels is None:
             continue
 
         # Get data from the artifact interval
-        start -= 2 / sample_freq
-        stop += 2 / sample_freq
-        interval_mask = raw_df["time"].between(start, stop)
-        interval_df = raw_df.loc[interval_mask]
+        padded_start = start - (fft_padding_samples / sample_freq)
+        padded_stop = stop + (fft_padding_samples / sample_freq)
+        padded_interval_mask = raw_df["time"].between(padded_start, padded_stop)
+        padded_interval_df = raw_df.loc[padded_interval_mask]
 
         for chan, freqs in artifact_channels.items():
             for lo_freq, hi_freq in freqs:
-                # # Discretize data and run FFT
-                # normalized_tone = np.int16(
-                #     ((interval_df[chan].values - ch_means[chan]) / ch_maxes[chan])
-                #     * fft_discretization
-                # )
-                # fft_data = scipy.fft.rfft(normalized_tone)
-                fft_data = scipy.fft.rfft(interval_df[chan].values)
+                # Apply FFT
+                fft_data = scipy.fft.rfft(padded_interval_df[chan].values)
 
-                # Clean artifact frequencies from data
+                # Clean selected frequencies from data
                 min_target_idx = (
-                    int(samples_per_freq * lo_freq) - 2 if lo_freq is not None else None
+                    int(samples_per_freq * lo_freq) - fft_cleaning_window
+                    if lo_freq is not None
+                    else None
                 )
                 max_target_idx = (
-                    int(samples_per_freq * hi_freq) + 2 if hi_freq is not None else None
+                    int(samples_per_freq * hi_freq) + fft_cleaning_window
+                    if hi_freq is not None
+                    else None
                 )
                 fft_data[min_target_idx:max_target_idx] = zeroing_value
 
-                # Reverse FFT
+                # Reverse FFT with cleaned frequencies
                 signal_data = scipy.fft.irfft(fft_data)
-                if len(signal_data) < raw_df.loc[interval_mask, chan].shape[0]:
+                if len(signal_data) < raw_df.loc[padded_interval_mask, chan].shape[0]:
                     signal_data = np.insert(signal_data, 0, zeroing_value)
 
-                # signal_data = (
-                #     signal_data / fft_discretization * ch_maxes[chan] + ch_means[chan]
-                # )
-
-                raw_df.loc[interval_mask, chan] = signal_data
+                # Replace original data (without padding) with cleaned data
+                raw_df.loc[raw_df["time"].between(start, stop), chan] = signal_data[
+                    fft_padding_samples:-fft_padding_samples
+                ]
 
     raw_df = raw_df.drop(columns=["time"])
+
+    # # .to_data_frame returns in microvolts, need to convert to volts
+    # # for future operations
+    # raw_df = raw_df / 1e6
 
     return raw_df
 
@@ -165,7 +196,8 @@ def make_mne_raw(data: np.ndarray, info: mne.Info) -> mne.io.Raw:
 
 
 def clean_eeg(
-    eeg_raw: mne.io.Raw,
+    raw_eeg_df: mne.io.Raw,
+    sample_freq: int,
     artifact_intervals: list[tuple[float, float, str]],
     method: str = "fft",
     artifact_specs: dict[
@@ -173,11 +205,12 @@ def clean_eeg(
     ] = eeg.default.DEFAULT_ACTION_ARTIFACT_FREQS,
     total_clean_freqs: list[list[float]] = [(0.1, 8)],
     total_clean_coef: float = 0.001,
-) -> mne.io.Raw:
+) -> pd.DataFrame:
     """Clean EEG data from artifacts.
 
     Args:
-        eeg_raw: Raw EEG data.
+        raw_eeg_df: Raw EEG data dataframe.
+        sample_freq: Sampling frequency of the EEG data.
         artifact_intervals: Intervals of seconds with actions that are considered artifacts.
             Used in selective channel cleaning.
             Example: [(1.0, 1.5, "HEAD_LEFT"), (5.2, 6.4, "STAND"), (9.1, 9.4, "BLINK")].
@@ -212,31 +245,19 @@ def clean_eeg(
         ValueError: Raised if an unknown method is passed (not "iterative" or "fft").
 
     Returns:
-        mne.io.Raw: Cleaned EEG data.
+        pd.DataFrame: Cleaned EEG data dataframe.
     """
     # Selective channel cleaning based on detected artifacts
     if method == "iterative":
-        raw_df = eeg_raw.to_data_frame()
-        clean_df = remove_artifacts(raw_df, artifact_intervals)
+        clean_df = remove_artifacts(raw_eeg_df, artifact_intervals)
         imputed_df = impute_missing_channel_data(clean_df)
         cleaned_eeg = imputed_df.drop(columns=["time"])
-        new_info = eeg_raw.info
     elif method == "fft":
         cleaned_eeg = clean_with_fft(
-            eeg_raw,
-            artifact_intervals,
-            artifact_specs,
-            sample_freq=eeg_raw.info["sfreq"],
-        )
-        new_info = mne.create_info(
-            eeg_raw.info["ch_names"],
-            sfreq=eeg_raw.info["sfreq"],
-            ch_types=eeg_raw.info.get_channel_types(),
+            raw_eeg_df, sample_freq, artifact_intervals, artifact_specs
         )
     else:
         raise ValueError("Unknown method")
-
-    cleaned_eeg = make_mne_raw(cleaned_eeg.values, new_info)
 
     # Total cleaning of all channels
 
