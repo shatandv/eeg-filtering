@@ -17,7 +17,89 @@ import sklearn.impute
 import eeg.default
 
 
-def clean_with_fft(
+def clean_fft(
+    raw_df: pd.DataFrame,
+    sample_freq: int,
+    freqs: list[tuple[float, float]],
+    channels: None | list[str] = None,
+    time_start_secs: None | float = None,
+    time_end_secs: None | float = None,
+    fft_padding_samples: int = 2,
+    fft_cleaning_window: int = 2,
+    zeroing_coef: float = 0.001,
+    scaling_coef: None | float = None,
+) -> pd.DataFrame:
+    # Value to zero out frequencies with
+    zeroing_value = raw_df.abs().min().min() * zeroing_coef
+
+    # Get FFT frequencies
+    n_samples = raw_df.shape[0]
+    fft_freqs = scipy.fft.rfftfreq(n_samples, 1 / sample_freq)
+    # Max frequency in FFT is half of the sampling frequency
+    samples_per_freq = len(fft_freqs) / (sample_freq / 2)
+
+    # Define channels
+    if channels is None:
+        channels = [name for name in raw_df.columns if name != "time"]
+
+    # Get data from the artifact interval
+    if time_start_secs and time_end_secs and (time_start_secs > time_end_secs):
+        raise ValueError(
+            "Starting point of cleaned interval can't be higher than ending point"
+        )
+    start = int(time_start_secs * sample_freq) if time_start_secs is not None else None
+    stop = int(time_end_secs * sample_freq + 1) if time_start_secs is not None else None
+    padded_start = (
+        max(start - fft_padding_samples, 0) if time_start_secs is not None else None
+    )
+    padded_stop = (
+        min(stop + fft_padding_samples, n_samples)
+        if time_end_secs is not None
+        else None
+    )
+
+    for chan in channels:
+        chan_df = raw_df.loc[raw_df.index[padded_start:padded_stop], chan]
+
+        for lo_freq, hi_freq in freqs:
+            # Apply FFT
+            fft_data = scipy.fft.rfft(chan_df.values)
+
+            # Clean selected frequencies from data
+            min_target_idx = (
+                int(samples_per_freq * lo_freq) - fft_cleaning_window
+                if lo_freq is not None
+                else None
+            )
+            max_target_idx = (
+                int(samples_per_freq * hi_freq) + fft_cleaning_window
+                if hi_freq is not None
+                else None
+            )
+            if scaling_coef is not None:
+                fft_data[min_target_idx:max_target_idx] = (
+                    fft_data[min_target_idx:max_target_idx] * scaling_coef
+                )
+            else:
+                fft_data[min_target_idx:max_target_idx] = zeroing_value
+
+            # Reverse FFT with cleaned frequencies
+            signal_data = scipy.fft.irfft(fft_data)
+            if len(signal_data) < chan_df.shape[0]:
+                signal_data = np.insert(signal_data, 0, zeroing_value)
+
+            # Replace original data (without padding) with cleaned data
+            signal_start = fft_padding_samples if start is not None else None
+            signal_stop = -fft_padding_samples if stop is not None else None
+            raw_df.loc[raw_df.index[start:stop], chan] = signal_data[
+                signal_start:signal_stop
+            ]
+
+    return raw_df
+
+
+# def clean_artifacts_fft(
+def clean_artifacts_fft(
     raw_df: pd.DataFrame,
     sample_freq: int,
     artifact_intervals: list[tuple[float, float, str]],
@@ -25,6 +107,7 @@ def clean_with_fft(
     fft_padding_samples: int = 2,
     fft_cleaning_window: int = 2,
     zeroing_coef: float = 0.001,
+    scaling_coef: None | float = None,
 ) -> pd.DataFrame:
     """Clean EEG data with fast fourier transform by filtering frequency ranges.
 
@@ -56,102 +139,50 @@ def clean_with_fft(
         zeroing_coef: Coefficient to scale minimum value of the data to zero out
             frequencies with.
             Defaults to 0.001.
+        scaling_coef: Coefficient to multiply values of the data that should be zeroed out.
+            If not None, used instead of `zeroing_coef`.
+            Defaults to None.
 
     Returns:
         pd.DataFrame: Сleaned EEG data dataframe.
     """
-    # Value to zero out frequencies with
-    zeroing_value = raw_df.drop(columns=["time"]).abs().min().min() * zeroing_coef
-
-    # Get FFT frequencies
-    n_samples = raw_df.shape[0]
-    fft_freqs = scipy.fft.rfftfreq(n_samples, 1 / sample_freq)
-    # Max frequency in FFT is half of the sampling frequency
-    samples_per_freq = len(fft_freqs) / (sample_freq / 2)
-
     # Clean selective channels based on detected artifacts
     for start, stop, action in artifact_intervals:
         artifact_channels = artifact_specs.get(action, None)
         if artifact_channels is None:
             continue
 
-        # Get data from the artifact interval
-        padded_start = start - (fft_padding_samples / sample_freq)
-        padded_stop = stop + (fft_padding_samples / sample_freq)
-        padded_interval_mask = raw_df["time"].between(padded_start, padded_stop)
-        padded_interval_df = raw_df.loc[padded_interval_mask]
-
         for chan, freqs in artifact_channels.items():
-            for lo_freq, hi_freq in freqs:
-                # Apply FFT
-                fft_data = scipy.fft.rfft(padded_interval_df[chan].values)
-
-                # Clean selected frequencies from data
-                min_target_idx = (
-                    int(samples_per_freq * lo_freq) - fft_cleaning_window
-                    if lo_freq is not None
-                    else None
-                )
-                max_target_idx = (
-                    int(samples_per_freq * hi_freq) + fft_cleaning_window
-                    if hi_freq is not None
-                    else None
-                )
-                fft_data[min_target_idx:max_target_idx] = zeroing_value
-
-                # Reverse FFT with cleaned frequencies
-                signal_data = scipy.fft.irfft(fft_data)
-                if len(signal_data) < raw_df.loc[padded_interval_mask, chan].shape[0]:
-                    signal_data = np.insert(signal_data, 0, zeroing_value)
-
-                # Replace original data (without padding) with cleaned data
-                raw_df.loc[raw_df["time"].between(start, stop), chan] = signal_data[
-                    fft_padding_samples:-fft_padding_samples
-                ]
+            clean_fft(
+                raw_df,
+                sample_freq,
+                freqs,
+                channels=[chan],
+                time_start_secs=start,
+                time_end_secs=stop,
+                fft_padding_samples=fft_padding_samples,
+                fft_cleaning_window=fft_cleaning_window,
+                zeroing_coef=zeroing_coef,
+                scaling_coef=scaling_coef,
+            )
 
     raw_df = raw_df.drop(columns=["time"])
-
-    # # .to_data_frame returns in microvolts, need to convert to volts
-    # # for future operations
-    # raw_df = raw_df / 1e6
-
     return raw_df
 
 
-# def clean_with_fft(raw: mne.io.Raw) -> mne.io.Raw:
-#     raw_df = raw.to_data_frame()
-#     raw_df = raw_df.iloc[:-1, 1:]
-#     ch_names = raw_df.columns.tolist()
-#     ch_types = ["eeg"] * len(ch_names)
-#     SAMPLE_RATE = raw.info["sfreq"]
-#     N = raw_df.shape[0]
-
-#     filtered_df = raw_df.copy()
-#     for channel in ch_names:
-#         chan = raw_df[channel].values
-#         normalized_tone = np.int16(((chan - chan.mean()) / chan.max()) * 32767)
-#         xf = scipy.fft.rfftfreq(N, 1 / SAMPLE_RATE)
-#         yf = scipy.fft.rfft(normalized_tone)
-
-#         # Максимальная частота составляет половину частоты дискретизации
-#         points_per_freq = len(xf) / (SAMPLE_RATE / 2)
-
-#         TARGET_MIN_FREQ = 0.1
-#         TARGET_MAX_FREQ = 8
-#         min_target_idx = int(points_per_freq * TARGET_MIN_FREQ)
-#         max_target_idx = int(points_per_freq * TARGET_MAX_FREQ)
-
-#         # Обнулим yf для индексов около целевой частоты
-#         yf[min_target_idx - 2 : max_target_idx + 2] = 0
-
-#         new_sig = scipy.fft.irfft(yf)
-#         filtered_df[channel] = new_sig / 43623701.42716775
-
-#     new_info = mne.create_info(ch_names, sfreq=SAMPLE_RATE, ch_types=ch_types)
-#     filtered_raw = mne.io.RawArray(filtered_df.values.T, new_info)
-#     # filtered_raw = raw.copy().filter(l_freq=8, h_freq=None)
-
-#     return filtered_raw
+def total_clean_fft(
+    cleaned_eeg_df: pd.DataFrame,
+    sample_freq: int,
+    total_clean_freqs: list[tuple[None | int, None | int]],
+    total_clean_coef: float,
+) -> pd.DataFrame:
+    cleaned_eeg_df = clean_fft(
+        cleaned_eeg_df,
+        sample_freq,
+        total_clean_freqs,
+        scaling_coef=total_clean_coef,
+    )
+    return cleaned_eeg_df
 
 
 def remove_artifacts(
@@ -251,17 +282,20 @@ def clean_eeg(
     if method == "iterative":
         clean_df = remove_artifacts(raw_eeg_df, artifact_intervals)
         imputed_df = impute_missing_channel_data(clean_df)
-        cleaned_eeg = imputed_df.drop(columns=["time"])
+        cleaned_eeg_df = imputed_df.drop(columns=["time"])
     elif method == "fft":
-        cleaned_eeg = clean_with_fft(
+        cleaned_eeg_df = clean_artifacts_fft(
             raw_eeg_df, sample_freq, artifact_intervals, artifact_specs
         )
     else:
         raise ValueError("Unknown method")
 
     # Total cleaning of all channels
+    cleaned_eeg_df = total_clean_fft(
+        cleaned_eeg_df, sample_freq, total_clean_freqs, total_clean_coef
+    )
 
-    return cleaned_eeg
+    return cleaned_eeg_df
 
 
 if __name__ == "__main__":
