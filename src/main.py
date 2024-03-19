@@ -1,5 +1,4 @@
 import datetime
-from typing import Any
 
 import eeg.filtering
 import eeg.io
@@ -54,7 +53,11 @@ if __name__ == "__main__":
     )
 
     cleaned_eeg = eeg.filtering.clean_eeg(
-        raw_eeg_df, raw_eeg.info["sfreq"], artifact_intervals, method="fft"
+        raw_eeg_df,
+        raw_eeg.info["sfreq"],
+        artifact_intervals,
+        method="fft",
+        # method="iterative",
     )
     cleaned_eeg = eeg.filtering.make_mne_raw(cleaned_eeg.values, raw_eeg.info)
     eeg.io.write_edf_file(cleaned_eeg, "cleaned_eeg.edf")
